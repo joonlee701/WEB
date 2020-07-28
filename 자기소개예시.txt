@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>자기 소개</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
+            <img src="donut.jpg" width="60px" class="d-inline-block align-top" alt="">&nbsp;&nbsp;&nbsp;
+            <ul class="nav nav-pills mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">로그아웃</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> </a>
+                </li>
+            </ul>
+            <div class="navbar-text">
+                <p>날씨</p>
+                <P>관리자님 환영합니다.</P>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <h3>메뉴 영역</h3>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+                        드롭다운
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Normal</a>
+                        <a class="dropdown-item active" href="#">Active</a>
+                        <a class="dropdown-item disabled" href="#">Disabled</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row" style="margin-left: 10px">
+                    <div class="col-12">
+                        <h3>자기 소개</h3>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-3">
+                        <!-- 사진 영역 -->
+                        <img src="images/KSH.jpg" width="200px">
+                    </div>
+                    <div class="col-8">
+                        <h5>이름 : 김소현</h5>
+                        <hr>
+                        <!-- content -->
+                        컴퓨터 공학과를 졸업하고 개발👩 💻에 관심이 많습니다!<br>
+                        스케이트보드🛹와 자전거🚲 타는 것을 좋아하고<br>
+                        도넛을 굉장히 좋아해 한 달에 한번 신메뉴가 나오면 꼭 먹는 &lt;🍩도넛 모임🍩&gt;을 하고 있습니다.<br><br>
+                        <button type="button" class="btn btn-success" onclick="location.href='KimSohyunQuiz.html'">Quiz</button>
+                    </div>
+                    <div class="col-1">
+                        <!-- etc -->
+                    </div>
+                </div>
+                <br>
+                <h3>✉️ Contact Me</h3>
+                <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;이메일 : sosso555@naver.com
+                    <br>&nbsp;&nbsp;&nbsp;github : <a href="https://github.com/sohyunk"><img src="images/GitHub-Mark-32px.png"></a></p>
+                <br>
+                <h5><i class="fas fa-school"></i> 학력 사항</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>졸업여부</th>             
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>용인송담대학교</td>
+                            <td>조명인테리어과</td>
+                            <td>2014.03 ~ 2016.02</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>강남대학교</td>
+                            <td>컴퓨터공학과</td>
+                            <td>2018.03 ~ 2020.02</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
