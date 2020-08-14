@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>감성분석</strong> - <small>결과</small>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-8">
+            <table class="table">
+                <tr class="d-flex">
+                    <td class="col-4">뉴스 </td>
+                    <td class="col-8">{{ movie.review }}</td>
+                </tr>
+                <tr class="d-flex" style="background:#ffeeba;">
+                    <td class="col-4"><strong>과연 뉴스가 진짜 일까요? 가짜 일까요?</strong></td>
+                    <td class="col-8"><strong>{{ movie.result_nb }}</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button class="btn btn-primary"
+                                onclick="location.href='/sentiment'">재실행</button>
+                    </td>
+                </tr>
+            </table>		
+        </div>
+        <div class="col-3"></div>
+    </div>                
+{% endblock %}

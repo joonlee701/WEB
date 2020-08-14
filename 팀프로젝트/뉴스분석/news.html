@@ -1,0 +1,26 @@
+<!-- {% extends "base.html" %} -->
+{% block subtitle %}
+    <strong>분류 분석</strong> - <small>뉴스 분류기 판별</small>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-8">
+            <form action="/sentiment" method="POST">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>뉴스 분류기</td>
+                        <td><textarea class="form-control" rows="6" name="review"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit" class="btn btn-primary">실행</button>&nbsp;&nbsp;&nbsp;
+                            <button type="reset" class="btn btn-secondary">취소</button>
+                        </td>
+                    </tr>
+                </table>		
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>                
+{% endblock %}

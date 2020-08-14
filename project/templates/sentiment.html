@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block subtitle %}
-    <strong>감성분석</strong> - <small>네이버 영화평 긍정/부정 평가</small>
+    <strong>분류 분석</strong> - <small>뉴스 분류기 판별</small>
 {% endblock %}
 {% block content %}
     <div class="row">
@@ -9,8 +9,8 @@
             <form action="/sentiment" method="POST">
                 <table class="table table-borderless">
                     <tr>
-                        <td>영화 감상평</td>
-                        <td><textarea class="form-control" rows="5" name="review"></textarea></td>
+                        <td>뉴스 분류기</td>
+                        <td><textarea class="form-control" rows="6" name="review"></textarea></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;">
